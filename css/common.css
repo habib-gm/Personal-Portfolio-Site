@@ -1,0 +1,25 @@
+
+@media (min-width: 1300px) {
+    main, footer, .header, nav{
+        width: 1300px;
+    }
+    main{
+        box-shadow: 1px 1px 20px black;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        width:100vw;
+        align-items: center;
+        overflow-x: hidden;
+        z-index: 1000;
+        scroll-behavior: smooth;
+    }
+}
+@media (max-width: 1300px) {
+    main, footer, .header, nav{
+        width: 100vw;
+    }
+}
+
+

@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.main__text{
+    width:85%;
+    margin-top: 20px; 
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary-color);
+}
+.formSection{
+    width: min(100vw, 700px);
+}
+h1{
+    color: #065D7A;
+}
+.formSection__form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.formSection__form__input{
+    display: inline;
+    width: min(70%, 250px);
+    margin-bottom:15px;
+    border: none;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    border-radius: 10px;
+    color: #065D7A;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    transition: background-color 300ms ease-out;
+}
+.formSection__form__input:focus, .formSection__form__commentInput:focus{
+    background-color: rgb(21, 19, 19, 0.4);
+    color: white;
+
+}
+.formSection__form__label{
+    display: inline;
+    /* border: 2px solid var(--primary-color); */
+    font-weight: bolder;
+    color: #065D7A;
+}
+.formSection__form__div{
+    width:90%;
+}
+.formSection__form__CommentLabel{
+    display: block;
+    
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.formSection__form__commentInput{
+    border-radius: 10px;
+    border-color: var(--primary-color);
+    width: min(90%, 350px);
+    color: black;
+    border-width:2px;
+    padding: 15px;
+    line-height: 1.2rem;
+    font-size: large;
+    font-weight: 600;
+    transition: background-color 300ms ease-out;
+
+}
+.formSection__form__submit{
+    display: block;
+    border:3px solid var(--primary-color);
+    border-radius: 10px;
+    color: black;
+    background-color: transparent;
+    line-height: 1.5rem;
+    margin: 15px 0;
+    width:30%;
+    cursor: pointer;
+    transition: all 100ms ease-out;
+}
+.formSection__form__submit:hover{
+    background-color: var(--primary-color);
+}
+@media (min-width: 800px){
+    .main__text{
+        width:75%;
+    }
+}

@@ -1,0 +1,103 @@
+*{
+    text-align: center;
+    padding:0;
+    margin: 0;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: min(1300px, 100%);
+    overflow: hidden;
+    padding-top: 5rem;
+    background-color: white;
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 10px;
+}
+@media (min-width: 700px) {
+    .skills{
+        padding-top: 2rem;
+    }
+}
+.skills__Header__h1{
+    border: 2px solid black;
+    font-weight: bolder;
+    padding: 6px;
+}
+.skills__One, .skills__3{
+    background-color: black;
+    background-image: url("../images/skills/AI.jpg");
+    color:white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.skills__3{
+    background-color: black;
+    background-image: url("../images/skills/Web Development.jpg");
+    color:white;
+    font-size: xx-large;
+    font-weight: bolder;
+
+}
+.skills__fulPage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:calc(100% - 3px);   
+    background-size: cover;
+    margin-top: 14px;
+    min-height: 200px; 
+    max-height: 300px;
+    margin-bottom: 10px;
+    text-align: right;
+    align-items: flex-end;
+}
+
+
+.skills__fulPage__text{
+    position: absolute;
+    top:0;
+    text-align: left;
+    height: 100%;
+    display: block;
+    width: 100%;
+    background-color: rgb(38, 38, 38, 0.6);
+}
+.skills__fulPage__text__p{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding-top: 10%;
+}
+
+@media (min-width: 700px) {
+    .skills__fulPage{
+        height: 50vh;
+    }
+}
+
+
+
+
+.skills__Two{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width:70%;
+    height: 250px; 
+    border: 2px solid rgb(14, 13, 13);
+    align-items: center;
+    justify-content: center;
+
+}
+.skills__Two__img{
+    width: 70%;
+    height: 100%;
+}
+
+.skills__Two__p{
+    width:30%;
+    text-align: center;
+}
